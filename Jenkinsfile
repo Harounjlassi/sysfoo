@@ -19,7 +19,7 @@ pipeline {
       stage("package"){
           steps{
               echo 'packaging the app'
-              sleep 'mvn package -DskipTests'
+              sh 'mvn package -DskipTests'
           }
       }
   }
